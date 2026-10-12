@@ -17,6 +17,7 @@
 
 ## Git
 - commit:不加 Co-Authored-By;message 或将提交的文件里出现真实姓名等个人隐私时,提交前先提醒一声。
+- 公开仓库(github.com/xuzhili835/*) commit message 只写变更本身,不写动机与敏感背景(脱敏、隐私、功劳类措辞);拿不准的先给用户过目。
 
 ## 文档
 - 详细设计文档:每完成一个模块,更新 backend 根目录的详细设计文档(无则创建);小功能不单独更新,等模块做完一起改。
@@ -29,6 +30,7 @@
 
 ## 配置同步(重点)
 - 当修改 SKILL.md 或类似于 CLAUDE.md 的全局指令文件时,若当前 AI 工具不是 Claude Code,则同步将修改内容写入用户目录 `~/.claude/` 下的同名对应文件中(当前机器实际维护 `~/.claude`、`~/.zcode`、`~/.agents`、`~/.codex` 四处 skills 镜像:Claude Code 读 .claude,ZCode 读 .zcode 且同时扫描 .agents,Codex 读 .codex),以保持配置一致。同步覆盖所有镜像方向、只增改、一般不删;其余工具自己改写过的镜像不回灌。
+- 全局指令或 skill 改动落定后,先提醒用户,再跑 `D:\Desktop\新建文件夹\Github\` 下对应仓库的 sync.sh 备份(skill→skills-backup,指令→global-instructions)。
 
 ## 实习项目文档(研究院/青软)
 - 研究院/青软实训相关文档(周报、技术方案、素材登记表、案例六件套)走 project-doc skill:材料主源与成品都在 `D:\Desktop\实训文档\`,工作日志按周在根目录,写文档前先读当周日志。
