@@ -22,6 +22,9 @@
 ## 文档
 - 详细设计文档:每完成一个模块,更新 backend 根目录的详细设计文档(无则创建);小功能不单独更新,等模块做完一起改。
 
+## 图纸渲染
+- 图纸渲染 PNG:DXF/DWG 出图前先读 cad-secdev-win11 的 references/dxf-geometry.md;用 ezdxf.addons.drawing + 白底 COLOR_SWAP_BW,别手写简化渲染器。
+
 ## 回复结构
 - 对提问的答复放在**最后**那条消息里(中间工具调用会刷掉前面的字),结尾别只 recap 代码、要重述答复,免得用户往上翻才找得到。
 
