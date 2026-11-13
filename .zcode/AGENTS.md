@@ -1,7 +1,7 @@
 # 全局规则(从 ~/.claude/CLAUDE.md 迁移,适用所有 workspace)
 
 ## 环境与依赖
-- 本机 Java:JDK 用 22(25 EA 会让 Lombok 编译挂);Maven `-s settings.xml`(aliyun 镜像),需联网。
+- 本机 Java:毕设 design 项目定 JDK 17(D:/jdk-17.0.11,2026-11-04 用户定案,pom=17/运行/上线产物三者同口径);其余项目仍 JDK 22(C:/Users/legion/.jdks/openjdk-22.0.2);25 EA、24、26 等过新 JDK 会让 Lombok 编译挂(TypeTag UNKNOWN);Maven `-s settings.xml`(aliyun 镜像),需联网。
 - 密钥:不提交(gitignore),走本地配置文件/环境变量。
 - 本机 npm/pip 下载缓存已全局重定向到 `E:\dev-cache\`(npm config 与 PIP_CACHE_DIR 环境变量生效),装依赖不写 C 盘,无需再手动加 `--cache-dir`。
 
